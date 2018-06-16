@@ -170,7 +170,7 @@ mendeley-tags = {networks,robustness},
 month = {jul},
 number = {6794},
 pages = {378--382},
-annote= "{To be annotated.}",
+annote= "{Complex networks are divided in two major classes. Exponential networks, with a degree distribution that peaks around average and decays exponentially. These networks are homogeneous, and high-degree nodes are statistically non-significant. Theoretical models of exponential networks are the Erdös-Rényi (ER) or Watts-Strogatz (WS) models. Scale-free networks have a degree distribution that decays with a power-law. These networks are non-homogeneous and high-degree nodes are statistically significant. These networks have a different behaviour facing errors (removal of nodes at random) and attacks (removal of nodes of high degree). ER networks are fragmented when a fraction $f_c$ of nodes is reached when exposed to errors and attacks. Scale-free networks are very resilient to errors, but vulnerable to attacks. When attacked, scale-free networks are fragmented with a fraction of removed nodes smaller than the $f_c$ of random graphs.}",
 pmid = {10935628},
 title = {{Error and attack tolerance of complex networks}},
 url = {http://www.nature.com/nature/journal/v406/n6794/abs/406378A0.html http://www.ncbi.nlm.nih.gov/pubmed/10935628 http://www.nature.com/doifinder/10.1038/35019019},
@@ -392,11 +392,60 @@ month = {may},
 number = {5},
 pages = {057102},
 pmid = {12059755},
-annote= "{To be reviewed later.}",
+annote= "{This is an attempt to explain the dynamic behaviour of complex networks by a model of network self-organization that creates networks with a degree distribution with a power law decay and the small world property. This model adds a node in each iteration with the following rules. The graph start with a complete graph of $m$ active nodes, and in each iteration a new node is included following three steps. 1) the new node has $m$ links. Each link is attaching the new node to an active node with probability $1-\mu$ or to any node according with linear preferential attachment with probability $\mu$. 2) The new node becomes active, 3) One of the active nodes is deactivated with a probability proportional to the reciprocal of the degree. With $\mu=0$ we obtain the BA model, and with $\mu \gg 1$ a scale-free graph with the small-world property.}",
 primaryClass = {cond-mat},
 url = {https://link.aps.org/doi/10.1103/PhysRevE.65.057102},
 volume = {65},
 year = {2002}
+}
+
+@article{Ellens2011,
+abstract = {This paper studies an interesting graph measure that we call the effective graph resistance. The notion of effective graph resistance is derived from the field of electric circuit analysis where it is defined as the accumulated effective resistance between all pairs of vertices. The objective of the paper is twofold. First, we survey known formulae of the effective graph resistance and derive other representations as well. The derivation of new expressions is based on the analysis of the associated random walk on the graph and applies tools from Markov chain theory. This approach results in a new method to approximate the effective graph resistance. A second objective of this paper concerns the optimisation of the effective graph resistance for graphs with given number of vertices and diameter, and for optimal edge addition. A set of analytical results is described, as well as results obtained by exhaustive search. One of the foremost applications of the effective graph resistance we have in mind, is the analysis of robustness-related problems. However, with our discussion of this informative graph measure we hope to open up a wealth of possibilities of applying the effective graph resistance to all kinds of networks problems. ?? 2011 Elsevier Inc. All rights reserved.},
+author = {Ellens, W. and Spieksma, F.M. and {Van Mieghem}, P. and Jamakovic, A. and Kooij, R.E.},
+title = {{Effective graph resistance}},
+doi = {10.1016/j.laa.2011.02.024},
+issn = {00243795},
+journal = {Linear Algebra and its Applications},
+keywords = {Effective resistance,Graph spectrum,Laplacian eigenvalues,Network robustness,Optimisation},
+month = {nov},
+number = {10},
+pages = {2491--2506},
+annote= "{In this context, a graph is treated as a electrical circuit, with resistance between vertices equal to edge weights. The effective resistance between two vertices is obtained applying Kirchhoff laws when a difference of potential is applied between these nodes, and effective graph resistance is equal to the sum of the effective resistances over all pair of vertices. Effective resistance is infinite for non-connected graphs, and will decrease as graph connectivity increases by adding edges or increasing edge weights. It can be used as a measure of robustness as takes the number of paths between any pair of vertices and their length into account. It can be calculated as the sum of reciprocals of the eigenvalues of the Laplacian, excluding the smallest eigenvalue. The paper provides computation procedures and defines graphs of optimal effective resistance.}",
+url = {http://linkinghub.elsevier.com/retrieve/pii/S0024379511001443},
+volume = {435},
+year = {2011}
+}
+
+@article{Fiedler1973,
+author = {Fiedler, Miroslav},
+title = {{Algebraic connectivity of graphs}},
+journal = {Czechoslovak Mathematical Journal},
+number = {2398},
+pages = {298--305},
+annote= "{The algebraic connectivity of a graph is the second smallest eigenvalue of the Laplacian of a graph. Diagonal of the Laplacian is equal to node degree, and the off diagonal elements equal to -1 if edge $\left(i,j\right)$ exists and zero otherwise.  In this paper is denoted as $a\left(G\right)$, and as $\lambda_{2}$ elsewhere. It is related with two other concepts: edge connectivity $e\left(G\right)$, or the minimal number of edges whose removal results in losing connectivity, and vertex connectivity $v\left(G\right)$ is defined similarly for removal of vertices together with adjacent edges. Algebraic connectivity is greater than zero if and only if $G$ is a connected graph. The magnitude of this value reflects how well connected the overall graph is, so that the larger is, the better connected the graph is. For non-complete graphs, $a\left(G\right) \leq v\left(G\right)$, and $v\left(G\right) \leq e\left(G\right)$.}",
+url = {http://dml.cz/dmlcz/101168},
+volume = {23},
+year = {1973}
+}
+
+
+@article{Boccaletti2007,
+abstract = {We present a novel approach to quantify the vulnerability of a complex network, i.e., the capacity of a graph to maintain its functional performance under random damages or malicious attacks. The proposed measure represents a multiscale evaluation of vulnerability, and makes use of combined powers of the links' betweenness. We show that the proposed approach is able to properly describe some cases for which earlier measures of vulnerability fail. The relevant applications of our method for technological network design are outlined.},
+author = {Boccaletti, Stefano and Buld{\'{u}}, Javier and Criado, Regino and Flores, Julio and Latora, Vito and Pello, Javier and Romance, Miguel},
+doi = {10.1063/1.2801687},
+issn = {1054-1500},
+journal = {Chaos: An Interdisciplinary Journal of Nonlinear Science},
+keywords = {Algorithms,Computer Communication Networks,Computer Simulation,Humans,Models,Neural Networks (Computer),Nonlinear Dynamics,Power Plants,Software,Statistical,Systems Theory,Theoretical,networks,robustness},
+mendeley-tags = {networks,robustness},
+month = {dec},
+number = {4},
+pages = {043110},
+pmid = {18163774},
+annote= "{To analyze the impact of the deletion of one of several edges (without deleting any node) on graph connectivity, authors propose multiscale measures equal to the average edge betweenness. Graphs with an unequal distribution of loads will have higher values of edge betweenness and then will be more vulnerable. As the average betweenness is proportional to average path length, a complete exam of the scales $p>0$ must be considered. In some cases might happen that two graphs may have equal values of vulnerability for $p=1$ and $p=\infty$, so all scales must be considered. The formula for $p=-1$ yields a parameter similar to efficiency, but with edge betweenness instead of distances.}",
+title = {{Multiscale vulnerability of complex networks}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/18163774 http://aip.scitation.org/doi/10.1063/1.2801687},
+volume = {17},
+year = {2007}
 }
 
 

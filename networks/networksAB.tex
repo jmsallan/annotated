@@ -17,7 +17,7 @@ The first attempt to model real-complex networks was the Erdös-R\'enyi (ER) mod
 
 As an explanation of real-world network being more clustered than random networks, Watts and Strogatz \cite{Watts1998a} defined the small-world property of complex networks: networks having this property have an average path length similar to random networks, but a much higher clustering coefficient. Later, Latora and colleagues \cite{Latora2001} reformulated the small-world property in terms of global and local efficiency. \medskip
 
-Barab\'asi and colleagues introduced the BA scale-free model of complex networks, where the mechanisms of growth and preferential attachment lead to a degree distribution following a power law \cite{BarabasiA.-L;Albert1999}. Arguably, the behavior of the world-wide-web can be explained with this model \cite{Barabasi2000}. The BA model has a low clustering coefficient, contrarily to random networks, then in \cite{Klemm2002} is defined a KE generative model of highly-clustered scale-free networks. \medskip
+Barab\'asi and colleagues introduced the BA scale-free model of complex networks, where the mechanisms of growth and preferential attachment lead to a degree distribution following a power law \cite{BarabasiA.-L;Albert1999}. Arguably, the behavior of the world-wide-web can be explained with this model \cite{Barabasi2000}. The BA model has a low clustering coefficient, contrarily to random networks, then in \cite{Klemm2002} is defined a KE generative model of highly-clustered scale-free networks. In Refs. \cite{Holme2002d} and \cite{Ravasz2003} can be found other network models with power-law degree distribution, short average path length and high clustering coefficient.\medskip
 
 Empirical research identified three structural classes of small-world networks: scale-free networks, with a degree distribution with a tail that decays as a power law, broad-scale or truncated scale-free, with a power-law regime followed by a  sharper cutoff and single-scale networks, with a  fast-decaying tail \cite{Amaral2000}. The emergence of the first two networks can be explained by optimization mechanisms, complementary to growth and preferential attachment \cite{Cancho2003}.
 
@@ -31,7 +31,7 @@ Empirical research identified three structural classes of small-world networks: 
 
 Introduction of the problem of static robustness: \cite{Albert2000}. \medskip
 
-Analysis of static robustness in terms of network efficiency: \cite{Crucitti2003}  for BA and KE graphs, \cite{Crucitti2004b} for BA graphs. Scale-free tend to be robust to errors, but sensitive to attacks. \medskip
+Analysis of static robustness in terms of network efficiency: \cite{Crucitti2003}  for BA and KE graphs, \cite{Crucitti2004b} for BA graphs. Scale-free tend to be robust to errors, but sensitive to attacks. In Ref. \cite{Holme2002a} is performed an analysis of the effect of edge and node removal for several real-world and models of complex networks. \medskip
 
 In \cite{Paul2005} is obtained the network that optimizes robustness for the sum of critical threshold for random deletion \cite{Cohen2000a} and for deletion of central nodes \cite{Cohen2001a}. \medskip
 
@@ -43,6 +43,8 @@ Schneider and colleagues \cite{Schneider2011} define a unique network robustness
 \section{Cascading failures}
 
 In \cite{Motter2002} is defined a first model of cascading failures. Load of a node is equal to number of shortest paths passing through it. Nodes with load above capacity are removed from the network. Evolution is tracked through size of connected component. \medskip
+
+Holme and colleagues analyze the cascading failures for node \cite{Holme2002b} and edge \cite{Holme2002c} overload in growing networks. As the network grows, values of node or edge betweenness increase, so when they reach a critical point a cascading failure may arise.\medskip
 
 In the model of \cite{Crucitti2004} load is also equal to number of shortest paths passing through it. They define a mechanism of load redistribution, and track evolution of damage through efficiency. \medskip
 

@@ -1206,3 +1206,76 @@ year = {2006}
 	volume = {21},
 	year = {2012}
 }
+
+@article{Verma2014,
+	abstract = {Resilience of most critical infrastructures against failure of elements that appear insignificant is usually taken for granted. The World Airline Network (WAN) is an infrastructure that reduces the geographical gap between societies, both small and large, and brings forth economic gains. With the extensive use of a publicly maintained data set that contains information about airports and alternative connections between these airports, we empirically reveal that the WAN is a redundant and resilient network for long distance air travel, but otherwise breaks down completely due to removal of short and apparently insignificant connections. These short range connections with moderate number of passengers and alternate flights are the connections that keep remote parts of the world accessible. It is surprising, insofar as there exists a highly resilient and strongly connected core consisting of a small fraction of airports (around 2.3{\%}) together with an extremely fragile star-like periphery. Yet, in spite of their relevance, more than 90{\%} of the world airports are still interconnected upon removal of this core. With standard and unconventional removal measures we compare both empirical and topological perceptions for the fragmentation of the world. We identify how the WAN is organized into different classes of clusters based on the physical proximity of airports and analyze the consequence of this fragmentation.},
+	annote = {The usual approach to network robustness is examining the effect of node deletion on size of largest connected component. In this article authors examine the effect of removal of links, instead of node isolation. To assess link importance, they define two measures, one based on passenger flux and other on degree of connectivity (local clustering coefficient multiplied by number flights). Results show that the most effective strategy of edge removal is to begin with nodes of low passenger flux and low degree of connectivity. They identify a core, bridge and periphery of the network with a t-core decomposition based on number of triangles of each node. This suggests that robustness of the world airport network relies in peripheral nodes, as the simultaneous isolation of core nodes affects little size of giant component.},
+	archivePrefix = {arXiv},
+	arxivId = {1404.1368},
+	author = {Verma, Trivik and Ara{\'{u}}jo, N. A. M. and Herrmann, Hans J},
+	doi = {10.1038/srep05638},
+	eprint = {1404.1368},
+	issn = {2045-2322},
+	journal = {Scientific Reports},
+	keywords = {networks},
+	mendeley-groups = {AirportNetworks/cnbook},
+	mendeley-tags = {networks},
+	month = {may},
+	number = {1},
+	pages = {5638},
+	pmid = {25005934},
+	title = {{Revealing the structure of the world airline network}},
+	url = {http://arxiv.org/abs/1404.1368 http://www.nature.com/doifinder/10.1038/srep05638 http://www.nature.com/articles/srep05638},
+	volume = {4},
+	year = {2015}
+}
+
+@article{DallAsta2006,
+	archivePrefix = {arXiv},
+	arxivId = {arXiv:physics/0603163v1},
+	author = {Dall'Asta, Luca and Barrat, Alain and Barth{\'{e}}lemy, Marc and Vespignani, Alessandro},
+	doi = {10.1088/1742-5468/2006/04/P04006},
+	eprint = {0603163v1},
+	annote = {This article analyzes the robustness of the world airport network considering not only topological indicators (the ones obtained with the unweighted network) but also geographical and traffic indicators, associating weights to edges such as distance and available seats. Authors use Tau’s Kendall to compare rankings of nodes obtained from local (degree and strength) and global (betweenness and unweighted betweenness) indices of centrality. They carry out robustness analysis using as performance indicators the size of largest connected component and giant’s component integrity, defined as the sum of strengths of nodes remaining in the largest connected component. The decline in integrity is sharper than in size, and similar for any strategy of removal of central nodes.},
+	issn = {1742-5468},
+	journal = {Journal of Statistical Mechanics: Theory and Experiment},
+	mendeley-groups = {AirportNetworks/cnbook},
+	month = {apr},
+	number = {04},
+	pages = {P04006--P04006},
+	primaryClass = {arXiv:physics},
+	title = {{Vulnerability of weighted networks}},
+	url = {http://iopscience.iop.org/1742-5468/2006/04/P04006 http://stacks.iop.org/1742-5468/2006/i=04/a=P04006?key=crossref.019695efb3ce58317554f2604375bff9},
+	volume = {2006},
+	year = {2006}
+}
+
+@article{Maduako2018,
+	abstract = {The study of the dynamic relationship between topological structure of a transit network and the mobility patterns of transit vehicles on this network is critical towardsdevising smart and time-aware solutions to transit management and recommendation systems. This paper proposes a time-varying graph (TVG) to model thisrelationship. The effectiveness of this proposed model has been explored by implementing the model in Neo4j graph database using transit feeds generated by bus transit network of the City of Moncton, New Brunswick, Canada. Dynamics in this relationshipalsohave been detected using network metrics such as temporal shortest paths, degree, betweenness and PageRank centralities as well as temporal network diameter and density. Keywords: Transit Networks,Mobility Pattern,Time-Varying Graph model, Graph Databaseand Graph Analytics Keywords: Transit Networks,Mobility Pattern,Time-Varying Graph model, Graph Database and Graph Analytics},
+	archivePrefix = {arXiv},
+	arxivId = {1803.07610},
+	author = {Maduako, Ikechukwu and Cavalheri, Emerson and Wachowicz, Monica},
+	doi = {arXiv:1803.07610v1},
+	eprint = {1803.07610},
+	annote = {The aim of this paper is to propose a time-varying graph (TVG) model for modelling and analyzing the dynamic relationship between topological structures and mobility patterns in a transit network. TVGs are presented as dynamic representations, in opposition to static graphs. There are two major approaches to TVGs: sequence of snapshots method and aggregated graph method. This paper uses the later method, defining spatial, temporal and spatio-temporal nodes and edges. They define network metrics based on these representation, and implement them in the Neo4j database for a transit network, and implement it to the transit feeds generated by the bus transit network of Moncton (New Brunswick, Canada).},
+	journal = {arXiv Physics and Society},
+	keywords = {graph database and graph,mobility pattern,time-varying graph model,transit networks},
+	month = {feb},
+	title = {{Exploring the use of time-varying graphs for modelling transit networks}},
+	url = {http://arxiv.org/abs/1803.07610},
+	year = {2018}
+}
+
+@article{Bottinelli2019,
+	abstract = {Characterizing the spatio-temporal evolution of networks is a central topic in many disciplines. While network expansion has been studied thoroughly, less is known about how empirical networks behave when shrinking. For transportation networks, this is especially relevant on account of their connection with the socio-economical substrate, and we focus here on the evolution of the French railway network from its birth in 1840 to 2000, in relation to the country's demographic dynamics. The network evolved in parallel with technology (e.g., faster trains) and under strong constraints, such as preserving a good population coverage and balancing cost and efficiency. We show that the shrinking phase that started in 1930 decreased the total length of the network while preserving efficiency and population coverage: efficiency and robustness remain remarkably constant while the total length of the network shrinks by {\$}50\backslash{\%}{\$} between 1930 and 2000, and the total travel time and time-diameter decreased by more than {\$}75\backslash{\%}{\$} during the same period. Moreover, shrinking the network did not affect the overall accessibility, with an average travel time that decreases steadily since its formation. This evolution leads naturally to an increase of transportation multimodality (such as a massive use of cars) and shows the importance of considering together transportation modes acting at different spatial scales. More generally, our results suggest that shrinking is not necessarily associated with a decay in performance and functions, but can be beneficial in terms of design goals and can be part of the natural evolution of an adaptive network.},
+	archivePrefix = {arXiv},
+	arxivId = {1902.06063},
+	author = {Bottinelli, Arianna and Gherardi, Marco and Barthelemy, Marc},
+	eprint = {1902.06063},
+	annote = {This paper analyzes the evolution of the French railway network between 1840 and 2000, in correlation with evolution of French communes’ population. Using elements of spatial networks theory, authors analyze the temporal evolution of network components; the evolution of measures of cost, efficiency and robustness; the evolution of population and coverage properties, including accessibility analysis.},
+	month = {feb},
+	pages = {1--12},
+	title = {{Efficiency and shrinking in evolving networks}},
+	url = {http://arxiv.org/abs/1902.06063},
+	year = {2019}
+}
